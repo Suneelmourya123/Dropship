@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './assets/Login.css';
+import '../assets/Login.css';
+import { Link } from 'react-router-dom';
 
 function Login() {
     const [username,setUsername] = useState('');
@@ -41,7 +42,8 @@ function Login() {
         clName === 'username' ? setUsername(evt.currentTarget.value) : setPassword(evt.currentTarget.value);  
     }
     return (
-        <div className='Login-wrapper'>
+        <div className='admin-wrapper'>
+        <div className='Login-wrapper App App-header'>
             <div className='header'>
                 <div dangerouslySetInnerHTML={{ __html: svgMarkup }} />
                 <h3>Admin Login</h3>
@@ -61,6 +63,8 @@ function Login() {
                     </div>
                 </form>
                 <div className='social-login'>
+                    <p><Link to="/register">Create account</Link></p>
+                    <p>Or</p>
                     <div id="g_id_onload"
                         data-client_id="100089377752-o7d27pqfgrm1dg48q4jq5l877n3l8a24.apps.googleusercontent.com"
                         data-callback="handleCredentialResponse">
@@ -68,6 +72,7 @@ function Login() {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 }
