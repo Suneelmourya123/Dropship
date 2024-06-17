@@ -1,0 +1,47 @@
+.Login-wrapper{
+    background-color: #0E1C21;
+    min-width: 460px;
+    min-height: 410px;
+}
+.Login-wrapper .header {
+    margin-block: 1rem;
+}
+.Login-wrapper h3{
+    margin: 0;
+}
+.content-wrapper {
+    max-width: 80%;
+    margin: auto;
+}
+.field {
+    position: relative;
+    margin-block: 1rem;
+    text-align: left;
+}
+.field input {
+    width: 100%;
+    background: unset;
+    border: none;
+    border-bottom: 1px solid #085F73;
+    color:#fff;
+}
+input:focus-visible {
+    outline: unset;
+}
+.field label {
+    color: #ccc;
+    font-size: 1rem;
+    font-weight: 100;
+}
+.btn-wrapper {
+    display: flex;
+    justify-content: right;
+    margin-block: 1rem;
+}
+button.submit_button {
+    background: unset;
+    color: #fff;
+    padding-inline: 20px;
+    padding-block: 10px;
+    border: 1px solid #085F73;
+}
